@@ -16,6 +16,11 @@ public class DadosProcedimentos {
     public void setValor(double valor) {
         this.valor = valor;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+       DadosProcedimentos p = (DadosProcedimentos)obj;
+       return getDescricao() == p.getDescricao();
+    }
+   
     
 }
